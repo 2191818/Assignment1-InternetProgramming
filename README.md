@@ -16,4 +16,3 @@ Implement the given design using HTML and CSS. |
 * Remove/Edit css file and remove any excess css tags
 * Rework the html and css file to meet the css grid feature requirement 
 
-## :D
