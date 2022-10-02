@@ -115,9 +115,10 @@ nav image{
     font-size: 15px;
 }
 .row{
-    margin: 5% 25%;
     display: flex;
-    gap: 50px;
+    gap: 100px;
+    text-align: center;
+    margin: 0 10%;
 }
 .row-col{
     flex-basis: 31%;
@@ -127,6 +128,9 @@ nav image{
     padding: 20px 5px;
     box-sizing: border-box;
     transition: 0.5s;
+    
+    
+    /*max-width: 250px;*/
 }
 h2{
     text-align: center;
@@ -198,15 +202,15 @@ h2{
 }
 .group4 h1{
     font-size: 75px;
-    font-weight: 600; 
+    font-weight: 600;
     color: #f64b3c;
     padding: 50px;
     text-align: center;
 }
 .group4 p{
-    margin: 10px 0 40px;
+    margin: 0 0 40px;
     color: #f64b3c;
-    font-size: 15px;
+    font-size: 26px;
     padding-left: 50px;
     text-align: center;
 }
@@ -231,4 +235,50 @@ h2{
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
+}
+
+.subscribe {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #f64b3c;
+    border-radius: 100px;
+    padding: 12px 60px;
+    font-size: 15px;
+    background: #f64b3c;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    border-radius: 50%;
+}
+input {
+    text-decoration: none;
+    border: 0px;
+    border-radius: 100px;
+    padding: 12px 60px;
+    font-size: 15px;
+    background: #f64b3c;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+}
+input[type=text] {
+    flex-grow: 1;
+    background-color: white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-left: 15%;
+}
+::placeholder {
+    color: #c3b1a2;
+}
+input[type=button] {
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-right: 15%;
 }
