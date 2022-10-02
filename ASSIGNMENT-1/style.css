@@ -277,6 +277,9 @@ input[type=text] {
 ::placeholder {
     color: #c3b1a2;
 }
+input[type=text]:focus {
+    outline: none;
+}
 input[type=button] {
     color: #fff;
     border-top-left-radius: 0;
