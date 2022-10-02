@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Group 1 = Navigation bar + text + button*/
+.group1 {
+    background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0, 0, 0, 0.9)), url(images/background1.png);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav image{
+    width: 100px;
+}
+.navigation{
+    flex: 1; 
+    text-align: right;
+    font-weight: 600;
+}
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+}
+.navigation ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}    
+.navigation ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #f6eedf;
+    display: block;
+    margin: auto;
+}
+.navigation ul li:hover::after{
+    width: 100%;
+    transition: 1s;
+}
+.titletext{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.titletext h1{
+    font-size: 110px;
+}
+.titletext p{
+    margin: 10px 0 40px;
+    color: #fff;
+    font-size: 36px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #f64b3c;
+    border-radius: 100px;
+    padding: 12px 60px;
+    font-size: 15px;
+    background: #f64b3c;
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+}
+.hero-btn:hover{
+    border: 1px solid #fdc200;
+    background-color: #fdc200;
+    transition: 1s;
+    color: black;
+    font-size: 15px;
+}
+
+/*Group2*/
+.group2{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    min-height: 100vh;
+    background-size: cover;
+    background-image: url(images/background2.png);
+    background-position: center;
+    position: relative;
+}
+.group2 h1{
+   font-size: 100px;
+   font-weight: 600; 
+   color: #f64b3c;
+   padding-top: 25px;
+   padding-bottom: 100px;
+}
+.group2 p{
+    color: #000;
+    font-size: 15px;
+    font-weight: 450;
+    padding: 10px;
+    color: #f64b3c;
+    font-size: 15px;
+}
+.row{
+    margin: 5% 25%;
+    display: flex;
+    gap: 50px;
+}
+.row-col{
+    flex-basis: 31%;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #f64b3c;
+}
+.group2 img{
+    padding: 25px;
+}
+
+/*Group3*/
+.group3{
+    background-color: #f64b3c;
+    padding: 100px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.group3 img{
+    max-width: 100%;
+    padding: 50px;
+}   
+.group3 text{
+    padding-left: 50px;
+}
+.group3 h1{
+    font-size: 75px;
+    font-weight: 600; 
+    color: #fff;
+    padding: 50px;
+}
+.group3 p{
+    margin: 10px 0 40px;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 50px;
+    text-align: justify;
+}
+.group3 .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #f64b3c;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 12px 60px;
+    font-size: 15px;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+.group3 .hero-btn:hover{
+    border: 1px solid #fdc200;
+    background-color: #fdc200;
+    transition: 1s;
+    color: black;
+    font-size: 15px;
+}
+
+/*Group4*/
+.group4{
+    background-color: #f6eedf;
+    padding: 100px;
+}
+.group4 text{
+    text-align: center;
+}
+.group4 h1{
+    font-size: 75px;
+    font-weight: 600; 
+    color: #f64b3c;
+    padding: 50px;
+    text-align: center;
+}
+.group4 p{
+    margin: 10px 0 40px;
+    color: #f64b3c;
+    font-size: 15px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+/*Group5*/
+.group5{
+    background-color: #222222;
+    padding: 100px;
+}
+.group5 h2{
+    color: #fff;
+}
+.group5 p{
+    color: #fff;
+}
+.group5 ul li{
+    list-style: none;
+    color: #fff;
+}
+.group5 .icons .fa{
+    color: firebrick;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
