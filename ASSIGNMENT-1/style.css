@@ -4,57 +4,52 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Group 1*/
+
+
+/*Group1*/
 .group1 {
     background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0, 0, 0, 0.9)), url(images/background1.png);
     min-height: 100vh;
     width: 100%;
     background-size: cover;
 }
-nav{
-    display: flex;
+#navbar {
+    display: grid;
+    min-height: 100px;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
     padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
 }
-.navigation{
-    text-align: right;
+#links {
+    display: grid;
+    justify-content: right;
+    align-content: center;
+    grid-auto-flow: column;
+    grid-gap: 1.5em;
+}
+#links a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
     font-weight: 600;
 }
-.navigation ul li{
-    display: inline-block;
-    padding: 8px 25px;
-}
-.navigation ul li a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-}    
-.navigation ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background-color: #f6eedf;
-    display: block;
-    margin: auto;
-}
-.navigation ul li:hover::after{
-    width: 100%;
+#links a:hover {
+    color: #f64b3c;
     transition: 0.5s;
 }
-.titletext{
-    width: 90%;
+
+.group1-text{
+    width: 88%;
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: left;
+    font-size: 60px;
+
 }
-.titletext h1{
-    font-size: 110px;
-}
-.titletext p{
+.group1-text p{
     margin: 10px 0 40px;
     color: #fff;
     font-size: 36px;
@@ -66,7 +61,6 @@ nav{
     padding: 12px 60px;
     font-size: 20px;
     background: #f64b3c;
-    cursor: pointer;
     font-weight: 600;
 }
 .hero-btn:hover{
@@ -74,15 +68,16 @@ nav{
     background-color: #fdc200;
     transition: 1s;
     color: black;
-    font-size: 15px;
+    font-size: 20px;
 }
+/*Group1*/
+
+
 
 /*Group2*/
 .group2{
-    text-align: center;
-    padding-top: 50px;
-    min-height: 100vh;
     width: 100%;
+    height: 100vh;
     background-size: cover;
     background-image: url(images/background2.png);
 }
@@ -90,18 +85,11 @@ nav{
    font-size: 100px;
    font-weight: 600; 
    color: #f64b3c;
-   padding-top: 25px;
-   padding-bottom: 100px;
-}
-.group2 p{
-    font-size: 15px;
-    font-weight: 450;
-    padding: 10px;
-    color: #f64b3c;
-    font-size: 15px;
+   padding-top: 75px;
+   text-align: center;
 }
 .row{
-    padding-top: 100px;
+    padding-top: 180px;
     display: flex;
     gap: 100px;
     text-align: center;
@@ -113,6 +101,7 @@ nav{
     border-radius: 10px;
     padding: 20px 5px;
 }
+
 h2{
     text-align: center;
     font-weight: 600;
@@ -121,95 +110,88 @@ h2{
 .group2 img{
     padding: 25px;
 }
+.group2 p{
+    font-size: 15px;
+    font-weight: 450;
+    padding: 10px;
+    color: #f64b3c;
+    font-size: 15px;
+}
+/*Group2*/
+
+
 
 /*Group3*/
 .group3{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
     background-color: #f64b3c;
-    padding: 100px;
+    display: grid;
 }
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.group3 img{
-    padding: 50px;
-}   
+.group3-text {
+    padding-left: 135px;
+}
 .group3 h1{
     font-size: 75px;
-    font-weight: 600; 
     color: #fff;
-    padding: 50px;
 }
 .group3 p{
-    margin: 10px 0 40px;
+    margin: 50px 0 50px;
     color: #fff;
-    font-size: 15px;
-    padding-left: 50px;
-    text-align: justify;
+    text-align: left;
 }
 .group3 .hero-btn{
     color: #f64b3c;
     border: 1px solid #fff;
-    border-radius: 100px;
-    padding: 12px 60px;
-    font-size: 20px;
     background: #fff;
-    cursor: pointer;
-    font-weight: 600;
-    transform: translate(50px,0px);
 }
 .group3 .hero-btn:hover{
     border: 1px solid #fdc200;
     background-color: #fdc200;
     transition: 1s;
     color: black;
-    font-size: 15px;
 }
+/*Group3*/
+
 
 /*Group4*/
 .group4{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
     background-color: #f6eedf;
-    padding: 100px;
+    display: grid;
+}
+.group4-text {
+    text-align: center;
+    font-size: 50px;
+    padding: 275px 0;
 }
 .group4 h1{
-    font-size: 75px;
     font-weight: 600;
     color: #f64b3c;
-    padding: 50px;
-    text-align: center;
+    padding-bottom: 50px;
 }
 .group4 p{
     margin: 0 0 40px;
     color: #f64b3c;
     font-size: 26px;
-    padding-left: 50px;
-    text-align: center;
+    padding-bottom: 50px;
 }
-/* .subscribe {
-    width: 100%;
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #f64b3c;
-    border-radius: 100px;
-    padding: 12px 60px;
-    font-size: 15px;
-    background: #f64b3c;
-    position: relative;
-    cursor: pointer;
-    font-weight: 600;
-} */
 form {
     display: flex;
-    padding-bottom: 100px;
 }
 input {
     border: 0px;
     border-radius: 100px;
     padding: 12px 60px;
     font-size: 15px;
-    cursor: pointer;
     font-weight: 600;
 }
 input[type=text] {
@@ -217,7 +199,7 @@ input[type=text] {
     flex-grow: 1;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    margin-left: 15%;
+    margin-left: 32%;
 }
 ::placeholder {
     color: #c3b1a2;
@@ -227,8 +209,7 @@ input[type=button] {
     background-color: #f64b3c;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    margin-right: 15%;
-    cursor: pointer;
+    margin-right: 32%;
 }
 input[type=button]:hover {
     border: #fdc200;
@@ -237,61 +218,47 @@ input[type=button]:hover {
     color: black;
     font-size: 15px;
 }
+/*Group4*/
+
+
 
 /*Group5*/
 .group5{
     background:#222222
 }
+.group5 .footersize {
+    height: 100vh;
+}
+.group5 .row{
+    text-align: left;
+    justify-content: space-around;
+}
+.group5 h1 {
+    margin:0;
+    font-weight:600;
+    color: #fff;
+    padding: 150px 0 25px;
+}
 .group5 p {
     font-size:16px;
     line-height:20px;
     font-weight:300;
-    text-align: left;
     color: white;
 }
-.group5 h1 {
-    margin:0;
-    font-weight:400;
-    color: #fff;
-    text-align: left;
-    padding-bottom: 15px;
-}
-.group5 ul li{
+.group5 ul li {
     list-style:none;
-    text-align: left;
     color: white;
     text-decoration:none;
-    padding-bottom: 5px;
-    padding-top: 5px;
-
+    line-height: 40px;
 }
 .group5 ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 20px;
 }
-.group5 .go_top {
-    line-height:40px;
-    cursor:pointer;
-    width:40px;
-    background: #fff;;
-    color:#fff;
-    position:fixed;
-    -webkit-box-shadow:0 4px 4px rgba(0,0,0,.1);
-    box-shadow:0 4px 4px rgba(0,0,0,.1);
-    -webkit-border-radius:50%;
-    border-radius:50%;
-    right:-webkit-calc((100% - 1140px)/ 2);
-    right:calc((100% - 1140px)/ 2);
-    z-index:111;
-    bottom:80px;
-    text-align:center
+.icons {
+    color: white;
+    padding-top: 25px;
+    font-size: 32px;
 }
-.group5 .footersize {
-    padding:105px 0 65px 0
-}
-@media (max-width:991px) {
- .footer-menu {
-  padding-left:0
- }
-}
+/*Group5*/
