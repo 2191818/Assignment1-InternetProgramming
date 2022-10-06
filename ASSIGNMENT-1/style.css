@@ -248,7 +248,6 @@ input[type=button]:hover {
 .group5 ul li {
     list-style:none;
     color: white;
-    text-decoration:none;
     line-height: 40px;
 }
 .group5 ul li a{
@@ -256,9 +255,51 @@ input[type=button]:hover {
     text-decoration: none;
     font-size: 20px;
 }
-.icons {
+.icons .fa-brands{
     color: white;
     padding-top: 25px;
     font-size: 32px;
+    text-decoration: none;
 }
 /*Group5*/
+
+
+
+/*EXTRA -- PAGE NOT FOUND -- WHEN CLICK ON ANY LINKS*/
+.error {
+    background-image:url(images/background3.jpg);
+    min-height: 100vh;
+    background-size: cover;
+}
+.error-text{
+    width: 88%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 25px;
+
+}
+.error-text p{
+    padding-top: 25px;
+    margin: 10px 0 40px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.error-btn{
+    display: inline-block;
+    color: #fff;
+    border: 2.5px solid #fff;
+    padding: 12px 60px;
+    font-size: 20px;
+    background: transparent;
+    font-weight: 600;
+}
+.error-btn:hover{
+    border: 2.5px solid #f64b3c;
+    background-color: #f64b3c;
+    transition: 1s;
+    color: #fff;
+    font-size: 20px;
+}
