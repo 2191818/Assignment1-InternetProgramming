@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="images/burger-icon.png">
         <script src="https://kit.fontawesome.com/8b75f0d2e8.js" crossorigin="anonymous"></script>
-        <script src="popup.js"></script>
+        <script src="javascript.js"></script>
     </head>
     <body>
 
@@ -32,7 +32,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur
                     <br>adispiscing elit. Suspendisse consectetur
                     <br>justo eu nunc consequat</p>
-                    <a href="#" onclick="linkClick()"><button class="hero-btn">ORDER NOW</button></a>   
+                    <a href="#/" onclick="linkClick()"><button class="hero-btn">ORDER NOW</button></a>   
             </div>
         </div>
         <!--Group1-->
@@ -41,31 +41,29 @@
         
         <!-- Group2-->
         <div class="group2">
-            <h1>Popular Package</h1>
+            <h1>Create Order</h1>
             <div class="row">
                 <div class="row-col"> 
-                    <h2>PACKAGE I</h2>
-                    <img src="images/burger-icon.png">
-                    <h2>$10.00</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>
-                        consectetur adispiscing elit.</p>
-                        <a href="#" onclick="linkClick()"><button class="hero-btn">ORDER NOW</button></a>   
+                    <h2>MENU ITEMS</h2>
+                    <select multiple="multiple" name="menu-items" id="menu-items">
+                        <option value="cheeseburger">CheeseBurger</option>
+                        <option value="hamburger">HamBurger</option>
+                        <option value="fries">Fries</option>    
+                        <option value="burger">Small Burger</option>
+                        <option value="burger">Medium Burger</option>
+                        <option value="burger">Double Burger</option>
+                        <option value="burger">Triple Burger</option>
+                    </select>
                     </div>
                 <div class="row-col"> 
-                    <h2>PACKAGE II</h2>
                     <img src="images/burger-icon.png">
-                    <h2>$20.00</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>
-                        consectetur adispiscing elit.</p>
-                        <a href="#" onclick="linkClick()"><button class="hero-btn">ORDER NOW</button></a>   
+                        <a href="#/" onclick="addItemsClick()"><button class="hero-btn">ADD</button></a>  
+                        <br></br>
+                        <a href="#/" onclick="removeItemsClick()"><button class="hero-btn">REMOVE</button></a>   
                     </div>
                 <div class="row-col"> 
-                    <h2>PACKAGE III</h2>
-                    <img src="images/burger-icon.png">
-                    <h2>$30.00</h2>
-                    <p>Lorem ipsum dolor sit amet,<br>
-                        consectetur adispiscing elit.</p>
-                        <a href="#" onclick="linkClick()"><button class="hero-btn">ORDER NOW</button></a>   
+                    <h2>YOUR ORDER</h2>
+                    <select multiple="multiple" name="order-items" id="order-items"></select>
                     </div>
             </div>
         </div>
@@ -82,7 +80,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur<br>
                     adispiscing elit. Vivamus lacinia odio vitae<br>
                 vestibulum vestibulum</p>
-                <a href="#" onclick="linkClick()"><button class="hero-btn">ORDER NOW</button></a>   
+                <a href="#/" onclick="linkClick()"><button class="hero-btn">ORDER NOW</button></a>   
             </div>
             </div>
         </div>
@@ -93,12 +91,11 @@
         <!--Group4-->
         <div class="group4">
             <div class="group4-text">
-                <h1>Don't miss Our Update</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adispiscing elit. 
-                    <br>Vivamus lacinia odio vitae vestibulum vestibulum</p>
+                <h1>Location's Near You</h1>
+                    <label for="subscribe-form">Enter a Zip Code:</label>
                     <form class="subscribe-form">
-                        <input type="text" placeholder="Your Email">
-                        <input type="button" value="SUBSCRIBE">
+                        <input type="text" id="zip-text" placeholder="Your ZIP Code">
+                        <input type="button" value="Validate" onclick="validateClick()">
                     </form>
             </div>
         </div>
