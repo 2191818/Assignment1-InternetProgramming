@@ -73,15 +73,32 @@
 
         <!--Group3-->
         <div class="group3">
-            <div class="container">
-                <img src="images/burger.png">
-                <div class="group3-text">
-                    <h1>Best Burger</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur<br>
-                    adispiscing elit. Vivamus lacinia odio vitae<br>
-                vestibulum vestibulum</p>
-                <a href="#/" onclick="linkClick()"><button class="hero-btn">ORDER NOW</button></a>   
-            </div>
+            <h1>Forms</h1>
+            <div class="row">
+                    <div id="survey">
+                    <h3>Please provide name</h3><textarea placeholder="Name"></textarea>
+                    <h3>Please provide email address</h3><textarea placeholder="Email"></textarea>
+                    <h3>Which menu item is your favorite</h3>
+                    <div>
+                        <ul class="answers">
+                            <li style="list-style: none;">Salad</li>
+                            <li style="list-style: none;">Burger</li>
+                            <li style="list-style: none;">Soup</li>
+                        </ul>
+                    </div>
+                    <h3>Which entrees items do you usually order</h3>
+                    <div>
+                        <ul class="answers">
+                            <li style="list-style: none;">Chicken Wings</li>
+                            <li style="list-style: none;">Onion Rings</li>
+                            <li style="list-style: none;">Quesadilla</li>
+                            <li style="list-style: none;">Nachos</li>
+                        </ul>
+                    </div>
+                    <h3>Write your comments:</h3> <textarea placeholder="Let us know what you think" class="comment"></textarea>
+                    <br>
+                    <button onclick="linkClick()" class="hero-btn">Submit</button>
+                    </div>
             </div>
         </div>
         <!--Group3-->
