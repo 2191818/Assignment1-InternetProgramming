@@ -19,27 +19,25 @@ API may be used.
 
     ○     Which menu item is your favorite?
 
-    ■ Salad
+        ■ Salad
 
-    ■ Burger
+        ■ Burger
 
-    ■ Soup
+        ■ Soup
 
     ○     Which entrees items do you usually order (select all that apply)?
 
-    ■ Chicken wings
+        ■ Chicken wings
 
-    ■ Onion rings
+        ■ Onion rings
 
-    ■ Quesadilla
+        ■ Quesadilla
 
-    ■ Nachos
+        ■ Nachos
 
     ○     Write your comments
 
 ## Current Task
 
-1. Create Form
-2. Create Multiple Choice, and CheckBox
 3. Create File
 4. Figure out how to use Ajax/JQuery to use files to commnuicate between server and website
